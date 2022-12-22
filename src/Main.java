@@ -63,13 +63,13 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int[] weight = new int[]{2, 4, 6};
+        int[] weight = new int[]{1, 2, 3};
+
         for (int i = 0; i < weight.length; i++) {
-            if (i == weight.length - 1) {
-                System.out.println(weight[i]);
-                break;
+            if (weight[i] % 2 == 1) {
+                weight[i] += 1;
             }
-            System.out.print(weight[i] + ", ");
         }
+        System.out.println(Arrays.toString(weight));
     }
 }
